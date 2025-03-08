@@ -12,7 +12,8 @@ export default defineConfig({
   ],
   server: {
     host: '0.0.0.0',  
-    port: 4500,       
+    port: 4500,  
+    allowedHosts: ['weather-app-0irt.onrender.com'] 
   }
   ,resolve: {
     alias: {
