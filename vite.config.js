@@ -10,7 +10,10 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  server:{port:4500}
+  server: {
+    host: '0.0.0.0',  
+    port: 4500,       
+  }
   ,resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
